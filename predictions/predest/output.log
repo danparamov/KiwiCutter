@@ -22,3 +22,24 @@ Loaded vocabularies from trained_models/estimator_en_de.torch/estimator_en_de.to
 Saving tags predictions to predictions/predest/tags
 Saving gap_tags predictions to predictions/predest/gap_tags
 Saving sentence_scores predictions to predictions/predest/sentence_scores
+{'batch_size': 64,
+ 'config': 'predest_predict.yml',
+ 'debug': False,
+ 'experiment_name': None,
+ 'gpu_id': -1,
+ 'load_data': None,
+ 'load_model': 'trained_models/estimator_en_de.torch/best_model.torch',
+ 'load_vocab': None,
+ 'log_interval': 100,
+ 'mlflow_always_log_artifacts': False,
+ 'mlflow_tracking_uri': 'mlruns/',
+ 'model': 'estimator',
+ 'output_dir': 'predictions/predest',
+ 'quiet': False,
+ 'run_uuid': None,
+ 'save_config': None,
+ 'save_data': None,
+ 'seed': 42}
+Local output directory is: predictions/predest
+Predict with the PredEst (Predictor-Estimator) model
+Loaded vocabularies from trained_models/estimator_en_de.torch/best_model.torch
