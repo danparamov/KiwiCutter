@@ -1,0 +1,61 @@
+This is run ID: 8c4d9d8f4c594fe888b181524aad3fe9
+Inside experiment ID: 0 (None)
+Local output directory is: runs/0/8c4d9d8f4c594fe888b181524aad3fe9
+Logging execution to MLflow at: None
+Using CPU
+Artifacts location: None
+Training the PredEst (Predictor-Estimator) model
+Loaded vocabularies from trained_models/estimator_en_de.torch/estimator_en_de.torch
+Estimator(
+  (predictor_tgt): Predictor(
+    (attention): Attention(
+      (scorer): MLPScorer(
+        (layers): ModuleList(
+          (0): Sequential(
+            (0): Linear(in_features=2400, out_features=1200, bias=True)
+            (1): Tanh()
+          )
+          (1): Sequential(
+            (0): Linear(in_features=1200, out_features=1, bias=True)
+            (1): Tanh()
+          )
+        )
+      )
+    )
+    (embedding_source): Embedding(70004, 300, padding_idx=1)
+    (embedding_target): Embedding(70004, 300, padding_idx=1)
+    (lstm_source): LSTM(300, 600, num_layers=2, batch_first=True, dropout=0.5, bidirectional=True)
+    (forward_target): LSTM(300, 600, num_layers=2, batch_first=True, dropout=0.5)
+    (backward_target): LSTM(300, 600, num_layers=2, batch_first=True, dropout=0.5)
+    (W1): Embedding(70004, 300, padding_idx=1)
+    (_loss): CrossEntropyLoss()
+  )
+  (mlp): Sequential(
+    (0): Linear(in_features=1500, out_features=125, bias=True)
+    (1): Tanh()
+  )
+  (lstm): LSTM(125, 125, batch_first=True, bidirectional=True)
+  (embedding_out): Linear(in_features=250, out_features=2, bias=True)
+  (embedding_out_gaps): Linear(in_features=500, out_features=2, bias=True)
+  (sentence_pred): Sequential(
+    (0): Linear(in_features=250, out_features=125, bias=True)
+    (1): Sigmoid()
+    (2): Linear(in_features=125, out_features=62, bias=True)
+    (3): Sigmoid()
+    (4): Linear(in_features=62, out_features=1, bias=True)
+  )
+  (sentence_sigma): Sequential(
+    (0): Linear(in_features=250, out_features=125, bias=True)
+    (1): Sigmoid()
+    (2): Linear(in_features=125, out_features=62, bias=True)
+    (3): Sigmoid()
+    (4): Linear(in_features=62, out_features=1, bias=True)
+    (5): Sigmoid()
+  )
+  (xents): ModuleDict(
+    (tags): CrossEntropyLoss()
+    (gap_tags): CrossEntropyLoss()
+  )
+)
+91374630 parameters
+Epoch 1 of 1
