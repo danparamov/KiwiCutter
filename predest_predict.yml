@@ -1,5 +1,5 @@
 gpu-id: -1
-load-model: trained_models/estimator_en_de.torch/estimator_en_de.torch
+load-model: trained_models/estimator_en_de.torch/best_model.torch
 model: estimator
 output-dir: predictions/predest
 seed: 42
