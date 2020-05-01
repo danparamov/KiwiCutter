@@ -1,0 +1,5 @@
+format: wmt18
+gold-target: WMT19/dev.tags
+pred-format: wmt17
+pred-target: predictions/predest/tags
+type: probs
