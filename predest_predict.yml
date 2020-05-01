@@ -1,0 +1,9 @@
+gpu-id: -1
+load-model: trained_models/estimator_en_de.torch/estimator_en_de.torch
+model: estimator
+output-dir: predictions/predest
+seed: 42
+test-source: WMT19/dev.src
+test-target: WMT19/dev.mt
+valid-batch-size: 64
+wmt18-format: false
